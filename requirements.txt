@@ -1,2 +1,0 @@
-# BERT-of-Theseus is built on Transformers
-transformers==2.4.0
