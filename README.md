@@ -4,7 +4,7 @@
 
 we propose a general **O**ver-**P**arameterization **D**istillation **F**ramework, namely **OPDF**, to improve the performance of knowledge distillation. Given the parameter matrices of a student model, we first over-parameterize them through MPO decomposition and then utilize high-order tensor alignment losses to ensure efficient information transfer.
 
-![](Markdown_md_files/08443d30-177f-11ef-a27f-f5fcaf997cde.jpeg?v=1\&type=image)
+![](\resources\main.png)
 
 ### Theseus
 
