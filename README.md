@@ -2,7 +2,7 @@
 
 ## Introduction
 
-we propose a general **O**ver-**P**arameterization **D**istillation **F**ramework, namely **OPDF**, to improve the performance of knowledge distillation. Given the parameter matrices of a student model, we first over-parameterize them through MPO decomposition and then utilize high-order tensor alignment losses to ensure efficient information transfer.
+we propose a general **O**ver-**P**arameterization **D**istillation **F**ramework, namely **OPDF**, to improve the performance of knowledge distillation. Given the parameter matrices of a student model, we first over-parameterize them through MPO decomposition and then utilize high-order tensor alignment losses to ensure efficient information transfer. Orginal paper is **Over-parameterized Student Model via Tensor Decomposition Boosted Knowledge Distillation**.
 
 ![avatar](resources/main.png)
 
