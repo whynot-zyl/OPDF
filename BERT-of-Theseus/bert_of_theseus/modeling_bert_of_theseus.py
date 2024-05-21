@@ -34,8 +34,8 @@ logger = logging.getLogger(__name__)
 # input3072_size = [64,1,1,1,1,1,48]
 # input768_size = [32,1,1,1,1,1,24]
 
-input3072_size = [64,1,1,1,48]
-input768_size = [32,1,1,1,24]
+input3072_size = [64,1,1,1,1,1,48]
+input768_size = [32,1,1,1,1,1,24]
 
 input4096_size = [64,1,64]
 input1024_size = [32,1,32]
