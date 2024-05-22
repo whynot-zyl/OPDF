@@ -92,7 +92,7 @@ def train(args, train_dataset, model, tokenizer):
     print("#########################################################################################################")
     print("参数量："+str(sum(p.numel() for p in model.bert.encoder.scc_layer.parameters() if p.requires_grad)))
     # 存储为txt文件
-    with open("/home/zhanyuliang/Project/DistillingMPO/OPF/BERT-of-Theseus/bert_of_theseus/scc_layer.txt","w") as f:
+    with open("/home/name/Project/DistillingMPO/OPF/BERT-of-Theseus/bert_of_theseus/scc_layer.txt","w") as f:
             f.write(str(sum(p.numel() for p in model.bert.encoder.scc_layer.parameters() if p.requires_grad))+"\n")
     print("#########################################################################################################")
 
