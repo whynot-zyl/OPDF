@@ -62,7 +62,7 @@ from mpobert import BertModelCustom
 import sys
 
 # 将包含 compress_tools 的目录添加到 sys.path
-sys.path.append('/home/zhanyuliang/Project/DistillingMPO/OPF')
+sys.path.append('/home/name/Project/DistillingMPO/OPF')
 
 # 现在你可以导入 LinearDecomMPO
 from compress_tools.MPOtorch import LinearDecomMPO
