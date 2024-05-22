@@ -1113,7 +1113,7 @@ def main():
                 # 存储
                 data = {'dev': best_dev, 'test': best_test}
                 # 将数据存储为文本文件
-                file_path = f"/mnt/zhanyuliang/data/checkpoint/nlp/lgtm/evalue/{data_args.task_name}_{training_args.learning_rate}_{model_args.t_learning_rate}_len{len(input3072_size)}_len2{len(input3072_size2)}.txt"
+                file_path = f"/mnt/name/data/checkpoint/nlp/lgtm/evalue/{data_args.task_name}_{training_args.learning_rate}_{model_args.t_learning_rate}_len{len(input3072_size)}_len2{len(input3072_size2)}.txt"
                 with open(file_path, 'w') as file:
                     for key, value in data.items():
                         file.write(f"{key}: {value}\n")
