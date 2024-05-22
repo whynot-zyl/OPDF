@@ -90,7 +90,7 @@ def train(args, train_dataset, model, tokenizer):
     print("#########################################################################################################")
     print("参数量："+str(sum(p.numel() for p in model.bert.encoder.layer.parameters() if p.requires_grad)))
     # 存储为txt文件
-    with open("/home/zhanyuliang/Project/DistillingMPO/OPF/BERT-of-Theseus/bert_of_theseus/scc_layer.txt","w") as f:
+    with open("/home/name/Project/DistillingMPO/OPF/BERT-of-Theseus/bert_of_theseus/scc_layer.txt","w") as f:
             f.write(str(sum(p.numel() for p in model.bert.encoder.layer.parameters() if p.requires_grad))+"\n")
     print("#########################################################################################################")
 
@@ -118,7 +118,7 @@ def train(args, train_dataset, model, tokenizer):
     print("#########################################################################################################")
     print("参数量："+str(sum(p.numel() for p in model.bert.encoder.scc_layer.parameters() if p.requires_grad)))
     # 存储为txt文件
-    with open("/home/zhanyuliang/Project/DistillingMPO/OPF/BERT-of-Theseus/bert_of_theseus/scc_layer.txt","w") as f:
+    with open("/home/name/Project/DistillingMPO/OPF/BERT-of-Theseus/bert_of_theseus/scc_layer.txt","w") as f:
             f.write(str(sum(p.numel() for p in model.bert.encoder.scc_layer.parameters() if p.requires_grad))+"\n")
     print("#########################################################################################################")
 
@@ -287,7 +287,7 @@ def train(args, train_dataset, model, tokenizer):
                     print(str(log_test))
                     data = {'dev': log_dev, 'test': log_test}
                     # 将数据存储为文本文件
-                    file_path = f"/mnt/zhanyuliang/data/checkpoint/nlp/theseus/result/{args.task_name}_{args.learning_rate}_{args.replacing_rate}_{args.scheduler_linear_k}_len{len(input3072_size)}.txt"
+                    file_path = f"/mnt/name/data/checkpoint/nlp/theseus/result/{args.task_name}_{args.learning_rate}_{args.replacing_rate}_{args.scheduler_linear_k}_len{len(input3072_size)}.txt"
 
                     with open(file_path, 'w') as file:
                         for key, value in data.items():
