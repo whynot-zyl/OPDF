@@ -18,10 +18,10 @@ from transformers.modeling_bert import BERT_PRETRAINED_MODEL_ARCHIVE_MAP, load_t
 
 import sys
 
-# 将包含 compress_tools 的目录添加到 sys.path
+
 sys.path.append('/home/zhanyuliang/Project/DistillingMPO/OPF')
 
-# 现在你可以导入 LinearDecomMPO
+
 from compress_tools.MPOtorch import LinearDecomMPO
 from compress_tools.Matrix2MPO import MPO
 import re
@@ -175,10 +175,10 @@ class BertEncoder(nn.Module):
                 encoder_attention_mask=None):
         all_hidden_states = ()
         all_attentions = ()
-        layer_outputs_list = ()  # 用于存储 self.layer 中每一层的输出
-        scc_layer_outputs_list = ()  # 用于存储 self.scc_layer 中每一层的输出
+        layer_outputs_list = () 
+        scc_layer_outputs_list = ()  
         
-        # 全部替换为 scc_layer的输出结果
+
         inference_layers1 = []
         for i in range(self.scc_n_layer):
             inference_layers1.append(self.scc_layer[i])
@@ -189,7 +189,7 @@ class BertEncoder(nn.Module):
                                          encoder_attention_mask)
             scc_layer_outputs_list = scc_layer_outputs_list + (layer_outputs[0],)
 
-        # 不替换的输出结果
+
         inference_layers2 = []
         for i in range(self.scc_n_layer):
             for offset in range(self.compress_ratio):
