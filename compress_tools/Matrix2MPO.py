@@ -2,7 +2,6 @@
 """
 Truncate a matrix with mpo in a truncate number.
 Date: 2020.11.16
-@author: zfgao
 """
 import numpy as np
 import random
