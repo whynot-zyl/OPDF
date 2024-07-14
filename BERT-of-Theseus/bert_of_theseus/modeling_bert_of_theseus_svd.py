@@ -19,7 +19,7 @@ from transformers.modeling_bert import BERT_PRETRAINED_MODEL_ARCHIVE_MAP, load_t
 import sys
 
 
-sys.path.append('/home/zhanyuliang/Project/DistillingMPO/OPF')
+sys.path.append('/home/Project/DistillingMPO/OPF')
 
 
 from compress_tools.MPOtorch import LinearDecomMPO
